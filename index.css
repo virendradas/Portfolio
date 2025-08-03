@@ -7,9 +7,6 @@ body{
     display: flex;
     padding: 40;
 }
-#LeftDiv{
-    
-}
 #RightDiv{
     text-align: right;
     width: 70%;
