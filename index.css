@@ -4,6 +4,7 @@ body{
     background-image: url(/Portfolio/media/360_F_601171827_GwbDHEuhisbGFXRfIpXFhtf7wAvsbLut.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: gray;
     display: flex;
     padding: 40;
