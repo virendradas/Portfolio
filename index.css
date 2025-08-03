@@ -1,45 +1,101 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-image: url(/Portfolio/media/360_F_601171827_GwbDHEuhisbGFXRfIpXFhtf7wAvsbLut.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: gray;
-    display: flex;
-    padding: 40;
-}
-#RightDiv{
-    text-align: right;
-    width: 70%;
-    border-radius: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-#StudyPage{
-    background-image: url(/Portfolio/media/images\ \(2\).jpeg);
-    background-size: cover;
-    margin: 100px;
-    color: black;
-    justify-content:center ;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
 }
-#StudyDiv{
-    border-radius: 30%;
-    height: 400px;
-    width: 500px;
-    background-color: aliceblue;
+
+.homePage {
+  background-image: url("/Portfolio/media/360_F_601171827_GwbDHEuhisbGFXRfIpXFhtf7wAvsbLut.jpg");
+}
+
+.studyPage {
+  background-image: url("/Portfolio/media/images\ \(2\).jpeg");
+}
+
+.skillsPage {
+  background-image: url("/Portfolio/media/");
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.left, .right {
+  flex: 1 1 300px;
+}
+
+.left h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.right h2 {
+  margin-bottom: 10px;
+}
+
+.right a {
+  display: inline-block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #00ffc3;
+}
+
+.content-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-box h1 {
+  margin-bottom: 15px;
+}
+
+.content-box ul {
+  text-align: left;
+  margin: 15px auto;
+  max-width: 300px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #0097a7;
+}
+
+/* Responsive Text */
+@media (max-width: 600px) {
+  .left, .right {
     text-align: center;
-}
-#S_to_H{
-    background-color: darkgray;
-}
-
-
-#SkillsPage{
-    background-image: url(/Portfolio/media/SkillsImage.jpeg);
-}
-
-#SkillsDiv{
-   margin-top: 10%;
-   margin-left: 30%;
+  }
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 }
